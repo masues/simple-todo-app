@@ -1,0 +1,29 @@
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.task-input {
+  width: 350px;
+  font-family: inherit;
+  font-size: 1.2em;
+  padding: 5px;
+  border: 2px solid #00471b;
+  border-radius: 7px 0 0 7px;
+  outline: none;
+}
+
+.task-button {
+  font-family: inherit;
+  font-size: 1.2em;
+  padding: 5px;
+  border: 2px solid #00471b;
+  border-radius: 0 7px 7px 0;
+  cursor: pointer;
+  outline: none;
+  background: #00471b;
+  color: #fff;
+}
