@@ -3,7 +3,7 @@ import '../css/TaskForm.css';
 import { v4 as uuidv4 } from 'uuid';
 
 function TaskForm({addTask}){
-  const handleSubmit = (event) => {
+  const handleSubmit = event => {
     // Prevent to reload the page
     event.preventDefault();
     // Access to the content using HTMLFormElement with name='task-input-text'
@@ -13,6 +13,8 @@ function TaskForm({addTask}){
       text: taskText,
       completed: false
     };
+    // Reset the input to empty string
+    event.target.elements['task-input-text'].value = '';
     addTask(newTask);
   };
 
